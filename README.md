@@ -1,4 +1,4 @@
-# php-gd-random-avatar
+# Generate avatar with shapes in PHP GD
 Using PHP GD to randomize an avatar with simple shapes and randomized color.
 
 ## Basic shapes in PHP GD, inspiration from
