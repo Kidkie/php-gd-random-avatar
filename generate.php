@@ -1,10 +1,4 @@
 <?php
-
-// --------------------------------------------
-// Basic shapes in PHP GD, inspiration
-// --------------------------------------------
-// http://www.alphadevx.com/a/56-Basic-Shapes-in-PHP-GD
-
 // --------------------------------------------
 // Basic vars
 // --------------------------------------------
@@ -32,12 +26,12 @@ imagefill($image, 0, 0, $background);
 // --------------------------------------------
 $color = imagecolorallocate($image, rand(0,255), rand(0,255), rand(0,255));
 $shapecolor = imagecolorallocate($image, rand(0,255), rand(0,255), rand(0,255));
-$halfbfcolor = imagecolorallocate($image, rand(0,255), rand(0,255), rand(0,255));
+$halfbgcolor = imagecolorallocate($image, rand(0,255), rand(0,255), rand(0,255));
 
 // --------------------------------------------
-// Rect that covers half size
+// Rect that covers half canvas size
 // --------------------------------------------
-ImageFilledRectangle($image, 0, $ypos, $width, $height, $halfbfcolor);
+ImageFilledRectangle($image, 0, $ypos, $width, $height, $halfbgcolor);
 
 // Diamond
 function drawDiamond($x, $y, $width, $color) {
